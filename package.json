@@ -1,0 +1,26 @@
+{
+  "name": "airline-auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:dev": "cross-env ENV=dev npx playwright test --ui",
+    "test:stg": "cross-env ENV=stg npx playwright test --ui",
+    "test:prod": "cross-env ENV=prod npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "mongodb": "^6.17.0"
+  }
+}
